@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="/img/favicon.ico.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Explore Transport Website</title>
+</head>
+
+<body>
+    <div id="sub-header">
+        <div class="container">
+            <!-- Nav Bar Start -->
+            <nav>
+                <a href="index.html">
+                    <img id='logo' src="img/logo-3.png" alt="logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- Nav Bar End -->
+        </div>
+    </div>
+
+    <!-- Project Section Start -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/explore_desktop.png">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">Explore Transport Campaign Website</h2>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('overview')">OVERVIEW</p>
+                        <p class="tab-links" onclick="opentab('technologies')">TECHNOLOGIES</p>
+                        <p class="tab-links" onclick="opentab('disclaimer')">DISCLAIMER</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="overview">
+                        <h2>This website campaign as an extension of Tourism New Zealand’s application using their branding theme and feel. </h2><br>
+                        <p>This project was to create a user-friendly single-page web application for an enhanced visitor experience. The application will allow users to input relevant information, such as the number of people in the party and the duration of users intended travel. Based on user input, the application will dynamically present suitable transport options to me.</p><br>
+                        <P>In addition, the application will facilitate the calculation of transport costs, taking into account factors such as the chosen vehicle type and the distance to be traveled. This calculation will include an estimation of fuel consumption to provide me with accurate cost estimates.</P><br>
+                        <p>Through this web application, the user will have a seamless experience, with the ability to input information, receive tailored transport options, and calculate precise cost estimates based on my specific requirements.</p><br>
+                        <p><strong>Key features: </strong>Incorporated Mapbox as an alternative to Google Maps.</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Maz5710/explore_transport_campaign"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://marian.arnot.yoobeestudent.net/explore_transport/"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="technologies">
+                        <p>The following tools and software were used to build this app.</p><br>
+                        <i id='icons' class="fa-brands fa-figma"></i>
+                        <i id='icons' class="fa-brands fa-html5"></i>
+                        <i id='icons' class="fa-brands fa-css3-alt"></i>
+                        <i id='icons' class="fa-brands fa-square-js"></i>
+                        <i id='icons' class="fa-brands fa-bootstrap"></i>
+                        <i id='icons' class="fa-brands fa-sass"></i>    
+                        <i id='icons' class="fa-brands fa-gulp"></i>
+                        <i id='icons' class="fa-brands fa-node-js"></i>
+                    </div>
+                    <div class="tab-contents" id="disclaimer">
+                        <p>Please be aware that the logos and images utilised in this project are the property of respected entities such as New Zealand Tourism and its associated organizations (100% Pure New Zealand, Tiaki - Care for New Zealand, Tourism Industry Aotearoa). Furthermore, the Explore Vehicle Rentals logo was specifically designed by me for this academic project. All images incorporated within this project were exclusively utilised for academic purposes during my enrollment at Yoobee College. It is essential to clarify that this website does not serve any commercial purposes, and the ownership of the project code rests with Marian Arnot.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project Section End -->
+
+    <!-- Gallery Section Start-->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">Gallery</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/explore_laptop.png" alt="Mockup image of Explore website on a laptop">
+                </div>
+                <div class="work">
+                    <img src="img/explore_tablet.png" alt="Mockup image of Explore website on a tablet">
+                </div>
+                <div class="work">
+                    <img src="img/explore_mobile.png" alt="iMockup image of Explore website on a mobile">
+                </div>
+            </div>
+            <a href="work-4.html" class="btn">Next project ></a>
+        </div>
+    </div>
+    <!-- Gallery Section End -->
+
+    <!-- Contact Section Start -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Left Start -->
+                <div class="contact-left">
+                    <h2 class="sub-title">Send me a message</h2>
+                    <div class="social-icons">
+                        <a href="https://github.com/Maz5710"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mazarnot/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Contact Left End -->
+
+                <!-- Contact Right Start -->
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                <!-- Contact Right End -->
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <div class="copyright">
+        <p id="copy">Copyright © 2023 Marian Arnot Portfolio</p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/222e21d044.js" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="/img/favicon.ico.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Star Safari Website</title>
+</head>
+
+<body>
+    <div id="sub-header">
+        <div class="container">
+            <!-- Nav Bar Start -->
+            <nav>
+                <a href="index.html">
+                    <img id='logo' src="img/logo-3.png" alt="logo">
+                </a>
+                <ul id="sidemenu">
+                    <li id='nav-menu'><a href="index.html">Home</a></li>
+                    <li id='nav-menu'><a href="index.html">About</a></li>
+                    <li id='nav-menu'><a href="#services">Services</a></li>
+                    <li id='nav-menu'><a href="#portfolio">Portfolio</a></li>
+                    <li id='nav-menu'><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- Nav Bar End -->
+        </div>
+    </div>
+
+    <!-- Project Section Start -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/starsafari-desktop.png">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">Star Safari Website</h2>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('overview')">OVERVIEW</p>
+                        <p class="tab-links" onclick="opentab('technologies')">TECHNOLOGIES</p>
+                        <p class="tab-links" onclick="opentab('disclaimer')">DISCLAIMER</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="overview">
+                        <h2>The Star Safari website is an innovative CMS-based platform that caters to both end users and content administrators. With a focus on delivering a seamless user experience, the website features a custom theme incorporating a blend of custom and third-party functionalities. It ensures compatibility across various browsers, devices, and platforms.</h2><br>
+                        <p>To meet the needs of both end users and web content administrators, the website provides specific post and page types. These components empower web administrators to easily manage the website. Additionally, an industry-standard agreement is assembled prior to production, ensuring a clear understanding between the client and the website development team.</P><br>
+                        <p>To support web administrators, comprehensive guideline documentation was provided, offering guidance on managing and maintaining the website. Moreover, a training session was conducted for the client to familiarise them with the content management system, empowering them to efficiently utilise its features.</P><br>
+                        <p><strong>Key features: </strong>Custom WordPress heme using React</p>
+                        <div class="social-icons">
+                            <a href="https://www.figma.com/proto/TBp7oX1yJwNv2byXcLznfT/Star-Safari-Desktop-Prototype-(Community)?type=design&node-id=43-125&scaling=scale-down&page-id=0%3A1&starting-point-node-id=43%3A125"><i class="fa-brands fa-figma"></i></a>
+                            <a href="https://github.com/Maz5710/Star-Safari"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://star-safari.vercel.app/"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="technologies">
+                        <p>The following tools and software were used to build this app.</p><br>
+                        <i id='icons' class="fa-brands fa-figma"></i>
+                        <i id='icons' class="fa-brands fa-square-js"></i>
+                        <i id='icons' class="fa-brands fa-node-js"></i>
+                        <i id='icons' class="fa-brands fa-react"></i>
+                        <i id='icons' class="fa-brands fa-wordpress"></i>
+                        <i id='icons' class="fa-brands fa-yoast"></i>
+                    </div>
+                    <div class="tab-contents" id="disclaimer">
+                        <p>Please note that the logos and images used in this project belong to Star Safari and Milky-way.kiwi. The cover image was sourced from CanvaPro, for which I hold a paid subscription. The Star Safari logo was specifically created by myself for this academic project. All the images used in this project are solely for academic purposes during my studies at Yoobee College. It is important to clarify that this is not a commercial website, and the ownership of the project code belongs to Marian Arnot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project Section End -->
+
+
+    <!-- Gallery Section Start-->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">Gallery</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/starsafari-tablet.png" alt="imgage of website">
+                </div>
+                <div class="work">
+                    <img src="img/starsafari-mobile.png" alt="imgage of  website">
+                </div>
+                <div class="work">
+                    <img src="img/starsafari-figma.png" alt="imgage of website">
+                </div>
+            </div>
+            <a href="work-1.html" class="btn">Next project ></a>
+        </div>
+    </div>
+    <!-- Gallery Section End -->
+
+    <!-- Contact Section Start -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Left Start -->
+                <div class="contact-left">
+                    <h2 class="sub-title">Send me a message</h2>
+                    <div class="social-icons">
+                        <a href="https://github.com/Maz5710"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mazarnot/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Contact Left End -->
+
+                <!-- Contact Right Start -->
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                <!-- Contact Right End -->
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <div class="copyright">
+        <p id="copy">Copyright © 2023 Marian Arnot Portfolio</p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/222e21d044.js" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

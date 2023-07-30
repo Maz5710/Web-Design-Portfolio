@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="/img/favicon.ico.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Emptio Tempus Website</title>
+</head>
+
+<body>
+    <div id="sub-header">
+        <div class="container">
+            <!-- Nav Bar Start -->
+            <nav>
+                <a href="index.html">
+                    <img id='logo' src="img/logo-3.png" alt="logo">
+                </a>
+                <ul id="sidemenu">
+                    <li id='nav-menu'><a href="index.html">Home</a></li>
+                    <li id='nav-menu'><a href="index.html">About</a></li>
+                    <li id='nav-menu'><a href="#services">Services</a></li>
+                    <li id='nav-menu'><a href="#portfolio">Portfolio</a></li>
+                    <li id='nav-menu'><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- Nav Bar End -->
+        </div>
+    </div>
+
+    <!-- Project Section Start -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/emptio-tempus-tablet-landscape.png">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">Emptio Tempus Website</h2>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('overview')">OVERVIEW</p>
+                        <p class="tab-links" onclick="opentab('technologies')">TECHNOLOGIES</p>
+                        <p class="tab-links" onclick="opentab('disclaimer')">DISCLAIMER</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="overview">
+                        <h2>As a group (four students) worked on a collaborative journey to develop an intuitive application that effectively presents data from an API in a user-friendly manner. The primary goal is to create a solution that allows users to comprehend and interact with the data effortlessly.</h2><br>
+                        <p>Before diving into the implementation phase, meticulous planning takes place, involving modeling the application and conducting prototype testing. These steps ensure a clear understanding of the desired functionality and enable the team to gather valuable user feedback early on. <em></em></P><br>
+                        <p>Throughout the development process, the team followed agile methodologies to manage the project effectively. This approach emphasises iterative development, constant communication, and adaptability. Regular feedback loops and incremental improvements are key aspects of the agile workflow, allowing the team to respond swiftly to changing requirements and user needs.</P><br>
+                        <p><strong>Key features: </strong>Niche market app using MongoDB to store product and user data and bycrypt to secure passwords</p>
+                        <div class="social-icons">
+                            <a href=https://github.com/Maz5710/Emptio-Tempus><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="technologies">
+                        <p>The following tools and software were used to build this app.</p><br>
+                        <i id='icons' class="fa-brands fa-figma"></i>
+                        <i id='icons' class="fa-brands fa-html5"></i>
+                        <i id='icons' class="fa-brands fa-css3-alt"></i>
+                        <i id='icons' class="fa-brands fa-square-js"></i><br>
+                        <img id='icons' src="img/icon_mongodb.png" alt="imgage of website">
+                        <img id='icons' src="img/icon_postman.png" alt="imgage of website">
+
+                    </div>
+                    <div class="tab-contents" id="disclaimer">
+                        <p>Please note that the logos and images used in this project belong to Emptio Tempus Yoobee Student Group. The images were sourced from the watch makers. All the images used in this project are solely for academic purposes during my studies at Yoobee College. It is important to clarify that this is not a commercial website, and the ownership of the project code belongs to Marian Arnot, Patricia Solis, Max Christiansan and David Lewis - all Yoobee Students in the WUX2207 class.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project Section End -->
+
+
+    <!-- Gallery Section Start-->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">Gallery</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/emptio-tempus-desktop.png" alt="imgage of website">
+                </div>
+                <div class="work">
+                    <img src="img/emptio-tempus-mobile-mens.png" alt="imgage of  website">
+                </div>
+                <div class="work">
+                    <img src="img/emptio-tempus-mongodb.png" alt="imgage of website">
+                </div>
+            </div>
+            <a href="work-5.html" class="btn">Next project ></a>
+        </div>
+    </div>
+    <!-- Gallery Section End -->
+
+    <!-- Contact Section Start -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Left Start -->
+                <div class="contact-left">
+                    <h2 class="sub-title">Send me a message</h2>
+                    <div class="social-icons">
+                        <a href="https://github.com/Maz5710"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mazarnot/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Contact Left End -->
+
+                <!-- Contact Right Start -->
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                <!-- Contact Right End -->
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <div class="copyright">
+        <p id="copy">Copyright © 2023 Marian Arnot Portfolio</p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/222e21d044.js" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
